@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "name": "Paris",
+    "clues": [
+      "This city is known as the 'City of Light'.",
+      "It features an iconic iron tower."
+    ],
+    "funFacts": [
+      "The Eiffel Tower was built in 1889.",
+      "It has over 170 museums."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tokyo",
+    "clues": [
+      "The most populous metropolitan area.",
+      "Famous for cherry blossoms."
+    ],
+    "funFacts": [
+      "World’s busiest pedestrian crossing.",
+      "More Michelin stars than anywhere."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "New York",
+    "clues": ["The city that never sleeps.", "Home to the Statue of Liberty."],
+    "funFacts": [
+      "The first capital of the United States.",
+      "The first American chess tournament was held in New York in 1843."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sydney",
+    "clues": [
+      "The largest city in Australia.",
+      "Home to the Sydney Opera House."
+    ],
+    "funFacts": [
+      "The Sydney Opera House has over 1,000 rooms.",
+      "The Sydney Harbour Bridge is the world's largest steel arch bridge."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Rio de Janeiro",
+    "clues": [
+      "The second largest city in Brazil.",
+      "Home to the Christ the Redeemer statue."
+    ],
+    "funFacts": [
+      "The statue of Christ the Redeemer is 98 feet tall.",
+      "The city is known for its beaches."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Cape Town",
+    "clues": [
+      "The second most populous city in South Africa.",
+      "Home to Table Mountain."
+    ],
+    "funFacts": [
+      "Table Mountain is one of the oldest mountains in the world.",
+      "The city is known for its harbor."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Istanbul",
+    "clues": ["The largest city in Turkey.", "It straddles Europe and Asia."],
+    "funFacts": [
+      "The city was formerly known as Byzantium and Constantinople.",
+      "The Grand Bazaar is one of the largest and oldest covered markets in the world."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Dubai",
+    "clues": [
+      "The largest city in the United Arab Emirates.",
+      "Home to the Burj Khalifa."
+    ],
+    "funFacts": [
+      "The Burj Khalifa is the tallest building in the world.",
+      "The city is known for its luxury shopping."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Buenos Aires",
+    "clues": [
+      "The capital and largest city of Argentina.",
+      "Home to the Obelisco de Buenos Aires."
+    ],
+    "funFacts": [
+      "The city is known for its tango.",
+      "The Obelisco de Buenos Aires is 67 meters tall."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Mumbai",
+    "clues": ["The largest city in India.", "Home to Bollywood."],
+    "funFacts": [
+      "The city has the most billionaires in India.",
+      "The city is known for its street food."
+    ]
+  }
+]
