@@ -5,8 +5,8 @@ const { getRandomDestination, getAllDestinations } = require('./destinations');
 const PORT = process.env.PORT || 5000;
 
 const app = express();
-// app.use(cors({ origin: 'http://localhost:3000' }));
-app.use(cors({origin: 'https://globe-trotter-frontend-1.onrender.com/'}));
+// app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({origin: 'https://globe-trotter-frontend-1.onrender.com'}));
 app.use(express.json());
 
 app.get('/api/destination', (req, res) => {
