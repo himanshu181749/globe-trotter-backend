@@ -19,14 +19,17 @@
       "Famous for cherry blossoms."
     ],
     "funFacts": [
-      "World’s busiest pedestrian crossing.",
+      "World's busiest pedestrian crossing.",
       "More Michelin stars than anywhere."
     ]
   },
   {
     "id": 3,
     "name": "New York",
-    "clues": ["The city that never sleeps.", "Home to the Statue of Liberty."],
+    "clues": [
+      "The city that never sleeps.",
+      "Home to the Statue of Liberty."
+    ],
     "funFacts": [
       "The first capital of the United States.",
       "The first American chess tournament was held in New York in 1843."
@@ -71,7 +74,10 @@
   {
     "id": 7,
     "name": "Istanbul",
-    "clues": ["The largest city in Turkey.", "It straddles Europe and Asia."],
+    "clues": [
+      "The largest city in Turkey.",
+      "It straddles Europe and Asia."
+    ],
     "funFacts": [
       "The city was formerly known as Byzantium and Constantinople.",
       "The Grand Bazaar is one of the largest and oldest covered markets in the world."
@@ -104,10 +110,373 @@
   {
     "id": 10,
     "name": "Mumbai",
-    "clues": ["The largest city in India.", "Home to Bollywood."],
+    "clues": [
+      "The largest city in India.",
+      "Home to Bollywood."
+    ],
     "funFacts": [
       "The city has the most billionaires in India.",
       "The city is known for its street food."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Bangkok",
+    "clues": [
+      "The capital of Thailand.",
+      "Famous for its street markets and temples."
+    ],
+    "funFacts": [
+      "The Grand Palace is a major attraction.",
+      "Bangkok has one of the longest place names in the world in Thai."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Moscow",
+    "clues": [
+      "The capital of Russia.",
+      "Home to the Kremlin and Red Square."
+    ],
+    "funFacts": [
+      "Moscow has the deepest metro station in the world.",
+      "The Kremlin is home to the Russian President."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Seoul",
+    "clues": [
+      "The capital of South Korea.",
+      "Home to K-pop and technology giants."
+    ],
+    "funFacts": [
+      "Seoul has the fastest internet speeds globally.",
+      "It is home to five UNESCO World Heritage Sites."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Toronto",
+    "clues": [
+      "The largest city in Canada.",
+      "Home to the CN Tower."
+    ],
+    "funFacts": [
+      "Toronto is one of the most multicultural cities in the world.",
+      "The CN Tower was once the tallest free-standing structure."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Singapore",
+    "clues": [
+      "A city-state in Southeast Asia.",
+      "Home to the Marina Bay Sands Hotel."
+    ],
+    "funFacts": [
+      "Singapore is known as the Garden City.",
+      "Chewing gum is banned in Singapore."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Barcelona",
+    "clues": [
+      "The capital of Catalonia in Spain.",
+      "Famous for Gaudí architecture."
+    ],
+    "funFacts": [
+      "La Sagrada Familia has been under construction since 1882.",
+      "The city has 4.5 km of beaches within the city limits."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Venice",
+    "clues": [
+      "The 'Floating City' in Italy.",
+      "Famous for its canals and gondolas."
+    ],
+    "funFacts": [
+      "Venice is built on 118 small islands connected by over 400 bridges.",
+      "There are no cars or roads in the main part of Venice."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Cairo",
+    "clues": [
+      "The capital of Egypt.",
+      "Near the ancient Pyramids of Giza."
+    ],
+    "funFacts": [
+      "Cairo is home to Al-Azhar University, one of the oldest universities in the world.",
+      "The city is nicknamed 'The City of a Thousand Minarets'."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Amsterdam",
+    "clues": [
+      "The capital of the Netherlands.",
+      "Famous for its canals and cycling culture."
+    ],
+    "funFacts": [
+      "Amsterdam has more bicycles than people.",
+      "The city has over 1,500 bridges crossing its canals."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Kyoto",
+    "clues": [
+      "The former imperial capital of Japan.",
+      "Known for its classical Buddhist temples."
+    ],
+    "funFacts": [
+      "Kyoto was spared from bombing during WWII due to its cultural significance.",
+      "The city has over 1,600 Buddhist temples and 400 Shinto shrines."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Mexico City",
+    "clues": [
+      "The capital of Mexico at high elevation.",
+      "Built on the ruins of Tenochtitlan."
+    ],
+    "funFacts": [
+      "It's sinking at a rate of about 10 inches per year.",
+      "The city has the largest number of museums in the Americas."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Berlin",
+    "clues": [
+      "The capital of Germany.",
+      "Known for its modern architecture and art scene."
+    ],
+    "funFacts": [
+      "Berlin has more bridges than Venice.",
+      "The Berlin Wall fell in 1989 after dividing the city for 28 years."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Marrakech",
+    "clues": [
+      "A major city in Morocco.",
+      "Famous for its vibrant markets and red buildings."
+    ],
+    "funFacts": [
+      "The medina of Marrakech is a UNESCO World Heritage site.",
+      "It's known as the 'Red City' due to its buildings made of red sandstone."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Prague",
+    "clues": [
+      "The capital of the Czech Republic.",
+      "Known as the 'City of a Hundred Spires'."
+    ],
+    "funFacts": [
+      "Prague Castle is the largest ancient castle complex in the world.",
+      "The Astronomical Clock in Prague was installed in 1410 and is still operational."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Stockholm",
+    "clues": [
+      "The capital of Sweden.",
+      "Built on 14 islands connected by 57 bridges."
+    ],
+    "funFacts": [
+      "The Nobel Prize ceremony is held annually in Stockholm.",
+      "The city's subway system is known as the world's longest art gallery."
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Hong Kong",
+    "clues": [
+      "A special administrative region of China.",
+      "Known for its skyline and harbor."
+    ],
+    "funFacts": [
+      "Hong Kong has more skyscrapers than any other city in the world.",
+      "The name means 'Fragrant Harbor' in Cantonese."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Vienna",
+    "clues": [
+      "The capital of Austria.",
+      "Known as the 'City of Music'."
+    ],
+    "funFacts": [
+      "Vienna has been ranked as the world's most livable city multiple times.",
+      "The Wiener Schnitzel is a famous dish originating from Vienna."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "San Francisco",
+    "clues": [
+      "Famous for the Golden Gate Bridge.",
+      "Known for its steep hills and cable cars."
+    ],
+    "funFacts": [
+      "The Golden Gate Bridge was the longest suspension bridge when it was completed in 1937.",
+      "The city's famous fog has its own name: Karl."
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Jerusalem",
+    "clues": [
+      "One of the oldest cities in the world.",
+      "Sacred to three major religions."
+    ],
+    "funFacts": [
+      "Jerusalem has been destroyed and rebuilt at least twice.",
+      "The city has over 2,000 archaeological sites."
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Havana",
+    "clues": [
+      "The capital of Cuba.",
+      "Known for its vintage cars and colonial architecture."
+    ],
+    "funFacts": [
+      "Old Havana is a UNESCO World Heritage site.",
+      "The Malecón seawall stretches for 8 km along Havana's coast."
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Copenhagen",
+    "clues": [
+      "The capital of Denmark.",
+      "Home to the Little Mermaid statue."
+    ],
+    "funFacts": [
+      "Copenhagen's Tivoli Gardens is one of the oldest amusement parks in the world.",
+      "More than 50% of Copenhagen residents commute by bicycle daily."
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Athens",
+    "clues": [
+      "The capital of Greece.",
+      "Home to the ancient Acropolis."
+    ],
+    "funFacts": [
+      "Athens is one of the oldest cities in the world, with a recorded history spanning over 3,400 years.",
+      "The first modern Olympic Games were held in Athens in 1896."
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Lisbon",
+    "clues": [
+      "The capital of Portugal.",
+      "Known for its hilly landscape and tram system."
+    ],
+    "funFacts": [
+      "Lisbon is built on seven hills, like Rome.",
+      "The city was nearly destroyed by a massive earthquake in 1755."
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Vancouver",
+    "clues": [
+      "A coastal city in British Columbia, Canada.",
+      "Known for its stunning natural scenery."
+    ],
+    "funFacts": [
+      "Vancouver has been consistently ranked as one of the most livable cities in the world.",
+      "Stanley Park is larger than New York's Central Park."
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Zurich",
+    "clues": [
+      "The largest city in Switzerland.",
+      "Known for its banking and finance sector."
+    ],
+    "funFacts": [
+      "Zurich has the highest standard of living in the world.",
+      "The city has over 1,200 drinking fountains with potable water."
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Reykjavik",
+    "clues": [
+      "The northernmost capital city in the world.",
+      "Capital of Iceland, known for geothermal activity."
+    ],
+    "funFacts": [
+      "Reykjavik is powered almost entirely by geothermal energy and hydropower.",
+      "During summer, the sun barely sets, and in winter, there are only about 4 hours of daylight."
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Hanoi",
+    "clues": [
+      "The capital of Vietnam.",
+      "Known for its French colonial architecture."
+    ],
+    "funFacts": [
+      "Hanoi celebrated its 1,000-year anniversary in 2010.",
+      "The Old Quarter has 36 streets, each named after the goods that were traditionally sold there."
+    ]
+  },
+  {
+    "id": 38,
+    "name": "São Paulo",
+    "clues": [
+      "The largest city in Brazil and South America.",
+      "Known for its skyscrapers and diverse population."
+    ],
+    "funFacts": [
+      "São Paulo has the largest Japanese population outside of Japan.",
+      "The city hosts the world's largest gay pride parade."
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Dublin",
+    "clues": [
+      "The capital of Ireland.",
+      "Home to the Guinness Storehouse."
+    ],
+    "funFacts": [
+      "Dublin's Phoenix Park is the largest enclosed urban park in Europe.",
+      "The city's O'Connell Bridge is wider than it is long."
+    ]
+  },
+  {
+    "id": 40,
+    "name": "New Orleans",
+    "clues": [
+      "Famous for jazz music and Mardi Gras.",
+      "Known for its French and Spanish Creole architecture."
+    ],
+    "funFacts": [
+      "New Orleans is built below sea level, with some areas sitting 15 feet below.",
+      "The city has more historic districts than any other city in the United States."
     ]
   }
 ]

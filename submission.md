@@ -1,113 +1,116 @@
 # Globetrotter Challenge Submission
 
-**Candidate**: Himanshu Gupta \
-**Date**: March 01, 2025 \
-**Email**: [[himanshuhimanshu282@gmail.com](mailto:himanshuhimanshu282@gmail.com)]\
-**Frontend Repository**: [Globetrotter Frontend](https://github.com/himanshu181749/globe-trotter-frontend)\
-**Backend Repository**: [Globetrotter Backend](https://github.com/himanshu181749/globe-trotter-backend)\
-**Live Frontend URL**: [Globetrotter Live](https://globetrotter-challenge-frontend.onrender.com) _(Pending Deployment)_
+**Candidate**: Himanshu Gupta  
+**Date**: March 01, 2025  
+**Email**: [himanshuhimanshu282@gmail.com](mailto:himanshuhimanshu282@gmail.com)  
+**Phone**: +91 79924 23198  
+**Frontend Repository**: [https://github.com/himanshu181749/globe-trotter-frontend](https://github.com/himanshu181749/globe-trotter-frontend)  
+**Backend Repository**: [https://github.com/himanshu181749/globe-trotter-backend](https://github.com/himanshu181749/globe-trotter-backend)  
+**Live Frontend URL**: [https://globe-trotter-frontend-1.onrender.com/](https://globe-trotter-frontend-1.onrender.com/) (Pending deployment)  
 
 ## Project Overview
 
-The _Globetrotter Challenge_ is an interactive, single-player web-based geography guessing game. Players must identify destinations worldwide using cryptic clues, with limited attempts and lifelines to assist. This project showcases a full-stack implementation, featuring a React frontend and a Node.js/Express backend, ensuring a seamless, engaging user experience. It extends beyond the original requirements by incorporating creative enhancements like social sharing and strategic gameplay elements.
-
-## Objectives
-
-- **Deliver a fully functional web application** with a backend-driven dataset.
-- **Provide an engaging and challenging gameplay experience**, including immediate feedback.
-- **Enable social sharing via a "Challenge a Friend" feature** with a dynamic link and game snapshot.
-- **Ensure modularity and extensibility** for future enhancements like timers and multiplayer support.
+The *Globetrotter Challenge* is a single-player geography guessing game implemented as a full-stack web application. Players identify destinations from 1-2 cryptic clues, with a game-wide limit of 5 wrong attempts and two persistent lifelines. The project comprises a React frontend and a Node.js/Express backend, delivering a seamless and engaging experience via REST API integration. Key features include immediate feedback, a "Challenge a Friend" sharing mechanism, and a polished UI, all built to meet and extend the original problem statement requirements.
 
 ## Key Features
 
-### **Gameplay Mechanics**
-
-- Players receive **1-2 random clues per round** and must guess the correct destination.
-- Each round presents **four multiple-choice options**.
-- **Game-wide limit of 5 wrong attempts**, tracked as "Wrong Attempts Left".
-- **Dynamic feedback system**:
-  - Correct guesses trigger **confetti animations** and reveal a **fun fact** about the destination.
-  - Incorrect guesses cause a **subtle shake animation**, but do not reveal the correct answer.
-  - If all attempts are exhausted, the game ends with a **"Game Over" screen** and a reset option.
-
-### **Lifelines (Single-Use Per Game)**
-
-- **50:50 Lifeline**: Eliminates two incorrect options.
-- **Reveal a Letter**: Displays the first letter of the correct answer.
-
-### **Social & Engagement Features**
-
-- **"Challenge a Friend"**: Generates a **shareable link** containing the player’s name and score.
-- **Game Snapshot**: Captures a screenshot of the game state for social sharing using `html2canvas`.
-
-### **User Interface & Experience**
-
-- Styled using **Tailwind CSS (CDN)** for a **modern, glassmorphism-inspired UI**.
-- Enhanced with **custom animations** (fade-in, shake effects, button interactions).
+- **Dataset**: 
+  - Over 100 destinations stored in `backend/destinations.json`, with clues and fun facts, served via REST API.
+- **Gameplay Mechanics**:
+  - Presents 1-2 random clues per destination with 4 multiple-choice options.
+  - Limits players to 5 wrong attempts across the entire game, tracked as "Wrong Attempts Left."
+  - Ends with a "Game Over" screen after 5 wrong attempts, offering a reset option.
+- **Feedback System**:
+  - Correct guesses trigger a `canvas-confetti` animation and display a fun fact.
+  - Incorrect guesses show a CSS shake animation, concealing the correct answer.
+- **Lifelines** (Single-use, persistent across game):
+  - "50:50": Reduces options to 2 (correct + 1 incorrect).
+  - "Reveal a Letter": Displays the first letter of the destination name as a hint.
+- **Challenge a Friend**:
+  - Generates a shareable URL with the player’s name and score.
+  - Captures a game screenshot using `html2canvas` for sharing.
+- **User Interface**:
+  - Styled with Tailwind CSS (via CDN) for a modern, responsive design with glassmorphism effects.
+  - Custom CSS animations (fade-in, shake) enhance interactivity.
 
 ## Technology Stack
 
-### **Frontend** ([Repository](https://github.com/himanshu181749/globe-trotter-frontend))
+### Frontend
+- **React**: Version 18.2.0  
+  - Component-based framework for building a dynamic, single-page application (SPA).
+  - Manages state and renders UI components efficiently via hooks (`useState`, `useEffect`).
+- **Vite**: Version 5.2.11  
+  - Fast build tool and development server, leveraging ES modules for instant hot module replacement (HMR) and optimized production builds.
+  - Outputs static assets to `dist/` for deployment.
+- **Tailwind CSS**: Loaded via CDN  
+  - Utility-first CSS framework for rapid, responsive styling without custom CSS overhead.
+  - Applied via class names for layout, typography, and glassmorphism effects (e.g., `bg-opacity-50`, `backdrop-blur-md`).
+- **axios**: Version 1.7.2  
+  - Promise-based HTTP client for making REST API requests to the backend (`GET /api/destination`, `GET /api/destinations`).
+- **canvas-confetti**: Version 1.9.2  
+  - Lightweight library for rendering confetti animations on correct guesses, enhancing visual feedback.
+- **html2canvas**: Version 1.4.1  
+  - Captures the game area as a PNG image for the "Challenge a Friend" feature, enabling screenshot sharing.
+- **react-icons**: Version 5.0.1  
+  - Provides scalable SVG icons from Remix Icon set (e.g., `RiScissorsFill`, `RiFontSize`) for lifelines and actions.
 
-- **Framework**: React (18.2.0) with Vite (5.2.11) for optimized builds.
-- **Styling**: Tailwind CSS (CDN-based) for efficiency and responsiveness.
-- **Libraries**:
-  - `axios` (1.7.2) - API communication.
-  - `canvas-confetti` (1.9.2) - Celebration effects.
-  - `html2canvas` (1.4.1) - Capturing game snapshots.
-  - `react-icons` (5.0.1) - Intuitive UI icons.
-
-### **Backend** ([Repository](https://github.com/himanshu181749/globe-trotter-backend))
-
-- **Runtime**: Node.js (v18.x)
-- **Framework**: Express (4.18.2) for lightweight API handling.
-- **CORS**: Configured for cross-origin frontend requests.
-- **Data Storage**: Static `destinations.json` with **100+ destinations**, curated with AI expansion.
+### Backend
+- **Node.js**: Version 18.x  
+  - Runtime environment for executing JavaScript server-side, supporting asynchronous I/O operations.
+- **Express**: Version 4.18.2  
+  - Minimalist web framework for Node.js, used to define and manage REST API routes.
+- **CORS**: Version 2.8.5  
+  - Middleware enabling cross-origin requests from the frontend, configured for `http://localhost:5173` (Vite dev port).
 
 ## Project Structure
 
-### **Frontend**
+### Frontend
+- `src/components/GamePlay.jsx`: Core game logic, state management, and UI rendering.
+- `src/components/GameStart.jsx`: Player name input and game initialization.
+- `src/App.jsx`: Root component with conditional rendering for start and play states.
+- `src/main.jsx`: Application entry point, mounts React to the DOM.
+- `src/index.css`: Custom CSS for animations (fadeIn, shake).
+- `public/index.html`: Base HTML template with Tailwind CSS CDN.
 
-- `src/components/GamePlay.jsx` - Core game logic.
-- `src/hooks/` - Custom hooks for API interaction.
-- `public/` - Static assets and metadata.
-
-### **Backend**
-
-- `server.js` - Express server handling API requests.
-- `destinations.json` - Local dataset storage.
+### Backend
+- `server.js`: Express server setup and API endpoint definitions.
+- `destinations.js`: Utility functions to fetch random and all destinations from `destinations.json`.
+- `destinations.json`: Static JSON file with 100+ destinations (name, clues, fun facts).
 
 ## API Endpoints
 
-| Method  | Endpoint            | Description                                              |
-| ------- | ------------------- | -------------------------------------------------------- |
-| **GET** | `/api/destination`  | Returns a random destination with clues and fun facts.   |
-| **GET** | `/api/destinations` | Returns the full dataset for frontend option generation. |
+| Method | Endpoint            | Description                                          |
+|--------|---------------------|-----------------------------------------------------|
+| GET    | `/api/destination`  | Retrieves a random destination object.              |
+| GET    | `/api/destinations` | Retrieves the full list of destinations for options.|
 
 ## Deployment Status
+- **Frontend**: Deployment pending on Render as a static site. Currently configured to use local backend or sample data for demo purposes.
+- **Backend**: Running locally at `https://globe-trotter-backend-erld.onrender.com`.
 
-- **Frontend**: Hosted on Render (**Pending final deployment**).
-- **Backend**: Running locally at `http://localhost:5000` (**Deployment setup TBD**).
+## Evaluation Instructions
 
-## Evaluation & Testing Instructions
+### Live Demo (Post-Deployment)
+- **URL**: [https://globe-trotter-frontend-1.onrender.com/](https://globe-trotter-frontend-1.onrender.com/)
+- **Steps**:
+  1. Visit the live URL.
+  2. Enter a player name to start.
+  3. Guess destinations, utilizing lifelines (each usable once per game).
+  4. Test "Challenge a Friend" by generating and inspecting the shared link.
+  5. Exhaust 5 wrong attempts to trigger "Game Over" and reset with "Start New Game".
 
-### **Live Demo (Post Deployment)**
+### Local Testing
+- **Repositories**: Clone both frontend and backend repositories.
+- **Setup**: Follow detailed instructions in each repository’s `README.md`.
+- **Run**: Start backend (`npm start`), then frontend (`npm run dev`) to test full integration.
+- **extras**: Need to change the api baseurl in GamePlay.jsx and also the cors origin in the server.js in the backend
 
-1. Access the frontend via the live URL.
-2. Play through a few rounds, testing lifelines and score tracking.
-3. Try the "Challenge a Friend" feature.
+## Submission Notes
+- Fully satisfies the problem statement:
+  - Backend-driven dataset with 100+ destinations.
+  - Immediate feedback (confetti for correct, shake for incorrect).
+  - "Challenge a Friend" with dynamic link and screenshot.
+- Extensible design supports future additions (timers, multiplayer).
+- Sample data option ensures frontend demo without backend dependency.
 
-### **Local Testing**
-
-1. Clone the frontend & backend repositories.
-2. Follow the `README.md` setup in each repo.
-3. Run the backend locally (`npm install && node server.js`).
-4. Run the frontend locally (`npm install && npm run dev`).
-
-## Future Enhancements
-
-- **Timed Rounds**: Introduce a countdown per round.
-- **Image-Based Clues**: Extend dataset to include image hints.
-- **Multiplayer Mode**: Implement real-time gameplay via Socket.IO.
-
-Thank you for reviewing my submission. For any clarifications, feel free to reach out at [himanshuhimanshu282@gmail.com](mailto:himanshuhimanshu282@gmail.com) or `+917992423198`
+For detailed setup, deployment, and architecture, refer to `README.md` in each repository and `architecture.md` for system design.
